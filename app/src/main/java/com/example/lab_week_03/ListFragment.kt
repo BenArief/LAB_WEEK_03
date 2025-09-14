@@ -33,6 +33,8 @@ class ListFragment : Fragment(), View.OnClickListener {
         view.findViewById<View>(R.id.affogato)?.setOnClickListener(this)
         view.findViewById<View>(R.id.americano)?.setOnClickListener(this)
         view.findViewById<View>(R.id.latte)?.setOnClickListener(this)
+        view.findViewById<View>(R.id.cappuccino)?.setOnClickListener(this)  // Baru
+        view.findViewById<View>(R.id.macchiato)?.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {

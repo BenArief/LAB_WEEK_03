@@ -1,42 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListFragment">
-    <LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/coffeeList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="@string/coffee_list"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginVertical="20dp"
-            android:background="?android:attr/dividerVertical" />
-        <TextView
-            android:id="@+id/affogato"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/affogato_title"/>
-        <TextView
-            android:id="@+id/americano"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/americano_title"/>
-        <TextView
-            android:id="@+id/latte"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/latte_title" />
-    </LinearLayout>
-</ScrollView>
+        android:text="@string/coffee_list"
+        android:textSize="22dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/affogato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/affogato_title"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/americano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/americano_title"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/latte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/latte_title"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/cappuccino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cappuccino"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/macchiato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/macchiato"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>
